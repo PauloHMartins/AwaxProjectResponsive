@@ -7,6 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,initial-scale=1">
+    <script src="assets/JS/script.js"></script>
     <title>DNA Tecnologia</title>
 </head>
 <body>
@@ -38,7 +39,7 @@
     </header>
     <main>
         <section class="banner">
-            <div class="sliders">
+            <div class="sliders" id="sliders">
                 <div class="slide">
                     <div class="slidearea">
                         <h1>Design is about <br/><span>Comunication.</span></h1>
@@ -47,16 +48,24 @@
                     </div>
                 </div>
                 <div class="slide">
-                    ....2
+                    <div class="slidearea">
+                        <h1>Design is about <br/><span>Comunication. Slider 2</span></h1>
+                        <h2>Call us: +55 34 99978-2143 </h2>
+                        <a href="" class="button">Get in touch!</a>
+                    </div>
                 </div>
                 <div class="slide">
-                    ....3
+                    <div class="slidearea">
+                        <h1>Design is about <br/><span>Comunication.Slider 3</span></h1>
+                        <h2>Call us: +55 34 99978-2143</h2>
+                        <a href="" class="button">Get in touch!</a>
+                    </div>
                 </div>
             </div>
             <div class="sliders-pointer">
-                <div class="pointer active"></div>
-                <div class="pointer"></div>
-                <div class="pointer"></div>
+                <div class="pointer" onclick="mudar()" id="pointer"  ></div>
+                <div class="pointer" onclick="mudar1()" id="pointer1"></div>
+                <div class="pointer" onclick="mudar2()" id="pointer2" ></div>
             </div>
         </section>
         <section class="defaut light">
@@ -614,5 +623,6 @@
         </div>
 
     </footer>
+ 
 </body>
 </html>
